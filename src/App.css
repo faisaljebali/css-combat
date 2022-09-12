@@ -1,0 +1,363 @@
+.homePageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100vh;
+}
+
+.formWrapper {
+    background: #282a36;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    color: #4aee88;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainLabel {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.homePageLogo {
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.inputBox {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 14px;
+    background: #eee;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.joinBtn,
+.leaveBtn {
+    background: #4aed88;
+    width: 100px;
+    margin-left: auto;
+}
+
+.joinBtn:hover,
+.leaveBtn:hover {
+    background: #2b824c;
+}
+
+.createInfo {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.createNewBtn {
+    color: #4aed88;
+    text-decoration: none;
+    border-bottom: 1px solid #4aed88;
+    transition: all 0.3s ease-in-out;
+}
+
+.createNewBtn:hover,
+footer a:hover {
+    color: #368654;
+    border-color: #368654;
+}
+
+.mainWrap {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+.aside {
+    background: #1c1e29;
+    padding: 16px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.asideInner {
+    flex: 1;
+}
+
+.clientsList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+.userName {
+    margin-top: 10px;
+}
+
+.logo {
+
+}
+
+.logoImage {
+    height: 60px;
+}
+
+.leaveBtn {
+    width: 100%;
+    margin-top: 20px;
+}
+.CodeMirror {
+    min-height: calc(100vh - 20px);
+    font-size: 20px;
+    line-height: 1.6;
+    padding-top: 20px;
+}
+.editorWrap {
+    width: 500px;
+}
+
+/* Styles */
+
+.editorCode {
+    max-width: 100%;
+    min-width: 25rem;
+    flex: 1 1;
+}
+.combat-resultat-iframes,
+.combat-instruction{
+    min-width: 27.5rem;
+    max-width: 100%;
+    flex-shrink: 0;
+    position: relative;
+}
+.combat-instruction{
+    max-width: 25vw;
+}
+.combat-resultat-iframes{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: overlay;
+    /* justify-content: space-between; */
+    background: #2c2c2c;
+    align-items: center;
+}
+.editorCode .CodeMirror {
+    height: calc(100vh - 117px);
+    min-height: calc(100vh - 117px);
+    font-size: 17px !important;
+    padding-top: 10px;
+}
+.editorCode .output_iframe_me {
+    height: calc(40vh - 0px);
+}
+.output_iframe_me iframe,
+.output_iframe_player iframe{
+    max-width: 400px !important;
+    border: none;
+    height: 300px;
+    background: #fff;
+    overflow: hidden;
+    display: block;
+    z-index: 2;
+    pointer-events: none;
+}
+.header-combat-css{
+    width: 100%;
+    min-height: 60px;
+    height: 60px;
+    background: #151619f5;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    overflow: hidden;
+}
+.header-combat-css .logo{
+    padding-left: 10px;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-style: italic;
+}
+.header-combat-css span.combat-logo {
+    position: relative;
+    left: -5px;
+}
+.header-combat-css span.css-logo {
+    position: relative;
+    left: 5px;
+}
+.header-combat-css .logo svg{
+    color: #fff;
+    fill: #cddc39;
+    /* transform: rotate(295deg); */
+}
+.editorCode .CodeMirror-scroll {
+    overflow: auto !important;
+    margin-bottom: 0;
+    margin-right: 0;
+    padding-bottom: 0;
+}
+.output_iframe_me,
+.output_iframe_player{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    mix-blend-mode: normal;
+    pointer-events: none;
+    box-shadow: #cddc39 2px 0 0 0px;
+}
+.text-iframe-title {
+    color: #fbfbfb;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px 5px 10px;
+    background: #2c2c2c;
+    max-width: 400px;
+    width: 100%;
+}
+.text-iframe-title.titlePlayer2 {
+    margin-top: 0px;
+}
+.text-editor-title{
+    color: #cddc39;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    background: #1c1c1c;
+    margin-bottom: 0;
+    padding: 5px 15px;
+}
+.text-result-title{
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    background: #1c1c1c;
+    margin-bottom: 0;
+    padding: 5px 0px 10px;
+}
+.combat-instruction {
+    background: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.output_iframe_me iframe{
+    margin-bottom: 0px;
+}
+.result_content .color-used {
+    background: white;
+    padding: 8px;
+    display: flex;
+    grid-gap: 10px;
+    flex-wrap: wrap;
+    font-weight: 700;
+    max-width: 400px;
+    width: 100%;
+}
+.result_content  .image-resultat {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.result_content .color-item {
+    display: flex;
+    grid-gap: 5px;
+    align-items: center;
+}
+.result_content .color-item span{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+img.imageCombat {
+    max-width: 100%;
+}
+img {
+    max-width: 100%;
+}
+.result_content .colors_to_used {
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 0;
+    font-weight: 700;
+}
+.container-image-iframe1 {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    height: 300px;
+    min-height: 300px;
+    overflow: hidden;
+    cursor: col-resize;
+    aspect-ratio: 4/3;
+}
+img.imageCombatOverflow {
+    position: absolute;
+    width: clamp(0px, 400px, 100%);
+    top: 0;
+    height: 100%;
+}
+img.imageCombatOverflow.filterSaturate{
+    opacity: 0.2;
+    z-index: 0;
+    filter: saturate(3);
+}
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+    border-radius: 5px;
+    border: 1px solid #555;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #424649; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
